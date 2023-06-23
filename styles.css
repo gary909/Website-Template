@@ -58,10 +58,10 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    /* background-image: url("images/magicpattern-ixxjruC7Gg4-unsplash.jpg"); */
-    background-image: url("images/VR_Comp.jpg");
+    background-image: url("images/magicpattern-ixxjruC7Gg4-unsplash.jpg");
+    /* background-image: url("images/VR_Comp.jpg"); */
   /* background-image: url("images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg"); */
-  /* background-image: url("https://www.w3schools.com/w3images/parallax2.jpg"); */
+
   
   min-height: 100%;
 }
