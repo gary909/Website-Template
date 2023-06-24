@@ -1,6 +1,6 @@
  /* Start of responsive images CSS */
 
- img {
+ .imgAnim {
   --f: .1; /* the parallax factor (the smaller the better) */
   --r: 10px; /* radius */
   
@@ -14,7 +14,7 @@
   transition: .5s;
   cursor: pointer;
 }
-img:hover {
+.imgAnim:hover {
   clip-path: inset(0 0 0 var(--_f) round var(--r));
   --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
 }
