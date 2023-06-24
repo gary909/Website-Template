@@ -49,7 +49,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,8 @@ body, html {
 .bgimg-2 {
   /* background-image: url("https://www.w3schools.com/w3images/parallax2.jpg"); */
   /* background-image: url("images/lea-l-4N6qT784t3A-unsplash.jpg"); */
-  background-image: url("images/shubham-dhage-5LQ_h5cXB6U-unsplash.jpg");
+  background-image: url("images/fishTank1.png"); 
+  /*background-image: url("images/shubham-dhage-5LQ_h5cXB6U-unsplash.jpg");*/
   min-height: 400px;
 }
 
@@ -78,8 +79,17 @@ body, html {
 .bgimg-3 {
   /* background-image: url("images/pexels-lumn-167699.jpg"); */
   /* background-image: url("images/shubham-dhage-oDFzTI3q87o-unsplash.jpg"); */
-  background-image: url("images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg");
+  /* background-image: url("images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg");*/
+  background-image: url("images/VR_Driving.png");
+  min-height: 400px;
+}
 
+/* Forth image (Contact) */
+.bgimg-4 {
+  /* background-image: url("images/pexels-lumn-167699.jpg"); */
+  /* background-image: url("images/shubham-dhage-oDFzTI3q87o-unsplash.jpg"); */
+  /* background-image: url("images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg");*/
+  background-image: url("images/xrTerra2.png");
   min-height: 400px;
 }
 
