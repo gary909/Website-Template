@@ -51,6 +51,7 @@
   transition: .5s;
   cursor: pointer;
 }
+
 .imgAnim:hover {
   clip-path: inset(0 0 0 var(--_f) round var(--r));
   --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
@@ -65,6 +66,34 @@
   gap: 30px;
   /* background: #C44D58; */
 }
+
+/* END of responsive images CSS */
+
+/* Start of responsive images CSS */
+
+.imgAnimSmall {
+  --f: .1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+  
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 100px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+}
+
+.imgAnimSmall:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+
+/* END of responsive SMALL images CSS */
+
+
 /*
 body {
   margin: 0;
