@@ -8,7 +8,7 @@
 
 .flex-container > div {
   /* background-color: #f1f1f1; */
-  margin: 15px;
+  margin: 50px;
   /* padding: 15px; */
   /* font-size: 30px; */
 }
@@ -43,7 +43,7 @@
   
   --_f: calc(100%*var(--f)/(1 + var(--f)));
   --_a: calc(90deg*var(--f));
-  width: 250px; /* the image size */
+  width: 200px; /* the image size */
   aspect-ratio: calc(1 + var(--f));
   object-fit: cover;
   clip-path: inset(0 var(--_f) 0 0 round var(--r));
