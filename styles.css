@@ -175,10 +175,10 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
+/* ==== Turned ON = SET FROM fixed to scroll to turn back on === Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-height: 400px;
   }
 }
