@@ -229,42 +229,21 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* Home Page Imnage For Medium Screens) */
 .bgimg-1 {
-  /*   background-image: url("images/magicpattern-ixxjruC7Gg4-unsplash.jpg");*/
-    background-image: url("images/VR_CompBars.jpg");
-  /* background-image: url("images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg"); */
-
-  
+  background-image: url("images/VR_CompBars.jpg");
   min-height: 50%;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  /* background-image: url("https://www.w3schools.com/w3images/parallax2.jpg"); */
-  /* background-image: url("images/lea-l-4N6qT784t3A-unsplash.jpg"); */
-  /* background-image: url("images/fishTank1.png"); */
-  background-image: url("images/magicpattern-jbywvpa9vH8-unsplash.jpg");
-  min-height: 400px;
-}
 
-/* Third image (Contact) */
-.bgimg-3 {
-  /* background-image: url("images/pexels-lumn-167699.jpg"); */
-  /* background-image: url("images/shubham-dhage-oDFzTI3q87o-unsplash.jpg"); */
-  background-image: url("images/magicpattern-KfFmwa7m5VQ-unsplash.jpg");
-  /* background-image: url("images/VR_Driving.png"); */
-  min-height: 400px;
-}
+/* Home Page Imnage For Mobile Screens) */
+/* @media only screen and (max-width: 600px) {
+  .bgimg-1 {
+    background-image: url("images/VR_CompBars_SML.jpg");
+    min-height: 100%;
+  }
+} */
 
-/* Forth image (Contact) */
-.bgimg-4 {
-  /* background-image: url("images/pexels-lumn-167699.jpg"); */
-  /* background-image: url("images/shubham-dhage-oDFzTI3q87o-unsplash.jpg"); */
-  background-image: url("images/magicpattern-am-yg8wLLIo-unsplash.jpg");
-  /* background-image: url("images/xrTerra2.png");*/
-  min-height: 400px;
-}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
