@@ -39,7 +39,7 @@ button.accordion:after {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #4083ffaf;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -97,7 +97,7 @@ button.accordion:after {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -137,7 +137,7 @@ button.accordion:after {
 }
 
 .active, .dot:hover {
-  background-color: #c9c9c9;
+  background-color: #4083ff7c;
 }
 
 /* Fading animation */
