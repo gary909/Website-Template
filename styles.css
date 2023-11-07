@@ -336,11 +336,31 @@ body, html {
   min-height: 50%;
 }
 
+/* Create a Parallax Effect */
+.bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home Page Imnage For Medium Screens) */
+.bgimg-4 {
+  background-image: url("images/webDevBG.png");
+  min-height: 50%;
+}
+
 
 /* Home Page Imnage For Mobile Screens) */
 @media only screen and (max-width: 600px) {
   .bgimg-1 {
     background-image: url("images/VR_CompBars_SML.jpg");
+    background-attachment: scroll; 
+    min-height: 50%;
+  }
+
+  .bgimg-4 {
+    background-image: url("images/webDevBG.png");
     background-attachment: scroll; 
     min-height: 50%;
   }
@@ -357,7 +377,7 @@ body, html {
 
 /* ==== Turned ON = SET FROM fixed to scroll to turn back on === Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: cover;
     min-height: 50%;
   }
