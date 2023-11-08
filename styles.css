@@ -337,6 +337,20 @@ body, html {
 }
 
 /* Create a Parallax Effect */
+.bgimg-2 {
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home Page Imnage For Medium Screens) */
+.bgimg-2 {
+  background-image: url("images/xrTerra1.png");
+  min-height: 50%;
+}
+
+/* Create a Parallax Effect */
 .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
@@ -355,6 +369,12 @@ body, html {
 @media only screen and (max-width: 600px) {
   .bgimg-1 {
     background-image: url("images/VR_CompBars_SML.jpg");
+    background-attachment: scroll; 
+    min-height: 50%;
+  }
+
+  .bgimg-2 {
+    background-image: url("images/xrTerra1.png");
     background-attachment: scroll; 
     min-height: 50%;
   }
