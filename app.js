@@ -1,20 +1,17 @@
-// START OF COLLAPSABLE CERTS JS
+// START OF COLLAPSIBLE CERTS JS
 var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
+for (var i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
-// END OF COLLAPSABLE CERTS JS
-
+// END OF COLLAPSIBLE CERTS JS
 
 // Modal Image Gallery
 function onClick(element) {
@@ -25,41 +22,51 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+window.onscroll = function() {
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar w3-card w3-animate-top w3-white";
+  } else {
+    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+  }
+};
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 
-
-
-// ++++++++ START OF TEXT SLIDESHOW CODE ++++++++
+// START OF TEXT SLIDESHOW CODE
 let slideIndex = 0;
-showSlides();
-
 function showSlides() {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
+  if (slides.length === 0) return; // Exit if there are no slides
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
-// ++++++++ END OF TEXT SLIDESHOW CODE ++++++++
+showSlides();
+// END OF TEXT SLIDESHOW CODE
+
+// Cookie banner
+document.addEventListener("DOMContentLoaded", function() {
+  if (!localStorage.getItem("cookiesAccepted")) {
+    document.getElementById("cookieConsent").style.display = "block";
+  }
+
+  document.getElementById("acceptCookies").onclick = function() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookieConsent").style.display = "none";
+  };
+});
