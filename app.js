@@ -62,11 +62,15 @@ showSlides();
 // Cookie banner
 document.addEventListener("DOMContentLoaded", function() {
   if (!localStorage.getItem("cookiesAccepted")) {
-    document.getElementById("cookieConsent").style.display = "block";
+      document.getElementById("cookieConsent").style.display = "block";
   }
 
   document.getElementById("acceptCookies").onclick = function() {
-    localStorage.setItem("cookiesAccepted", "true");
-    document.getElementById("cookieConsent").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookieConsent").style.display = "none";
+  };
+
+  document.getElementById("declineCookies").onclick = function() {
+      window.location.href = "about.html#cookies-info";
   };
 });
